@@ -1,0 +1,1111 @@
+html {
+    width: 100%;
+    margin-top: 0;
+    margin: 0; 
+    padding: 0;
+    font-family: 'RalewayD', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c3e50;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h2 {
+    margin-left: 15%;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+}
+
+.nav-bar {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+
+.logo-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 7rem;
+    width: 7rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+.menu {
+    width: 45%;
+    font-size: 0rem;
+    line-height: 7rem;
+    position: relative;
+}
+
+.menu a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 5rem;
+    bottom: 0.6rem;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu .animation {
+    position: absolute;
+    height: 2px;
+    bottom: 0.6rem;
+    z-index: 0;
+    background: transparent;
+    transition: all .5s ease 0s;
+    box-shadow: none;
+}
+
+.about {
+    width: 25%;
+}
+nav .start-about, a:nth-child(1):hover~.animation {
+    width: 25%;
+    left: 0;
+    background-color: white;
+}
+
+.skills {
+    width: 25%;
+}
+nav a:nth-child(2):hover~.animation {
+    width: 25%;
+    left: 25%;
+    background-color: white;
+}
+
+.projects {
+    width: 25%;
+}
+nav a:nth-child(3):hover~.animation {
+    width: 25%;
+    left: 50%;
+    background-color: white;
+}
+.contact {
+    width: 25%;
+}
+nav a:nth-child(4):hover~.animation {
+    width: 25%;
+    left: 75%;
+    background-color: white;
+}
+
+.gitlink-con {
+    width: 5%;
+    align-self: center;
+    justify-self: center;
+    line-height: 4.5rem;
+    margin-top: 0.5rem;
+}
+
+.gitlink {
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.gitlink:hover {
+    color: black;
+    font-size: 2.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    .menu, .gitlink {
+        display: none;
+    }
+
+    .toggle-icon {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        font-size: 2.5rem;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        position: fixed;
+    }
+
+    .toggle-icon .open,
+    .toggle-icon .close {
+        position: absolute;
+        margin-top: 0.5rem;
+         
+    }
+
+    .toggle-icon .close {
+        margin-right: 0.2rem;
+        rotate: 45deg;
+    }
+
+    .mbl-menu {
+        list-style: none;
+        position: fixed; 
+        right: 1.2rem;  
+        top: 3rem;
+        width: 10rem; 
+        background-color: rgba(0, 0, 0, 0.7);   
+        border-radius: 0.25rem;
+        text-align: center;
+        line-height: 2.3rem;
+        z-index: 10;  
+    }
+
+    .mbl-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    .mbl-menu .mbl-gitlink {
+        font-size: 1.6rem;  
+     }
+
+    
+}
+
+
+
+
+
+main .sticky {
+    position: sticky;
+    height: 0rem;
+    top: 70%;
+    width: 6rem;
+}
+
+.sticky .sticky-items {
+    list-style-type: none;
+    color: #3498db;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+
+.sticky-items .display2 {
+    display: none;
+}
+
+.sticky-items .item-disp:hover {
+    .display1 {
+        display: none;
+    }
+    .display2 {
+        display: contents;
+        color: #3498db;
+        text-decoration: none;
+    }
+}
+
+.sticky-items .sticky-line {
+    height: 4rem;
+    width: 0.2rem;
+    background-color: #3498db;
+    content: "";
+    margin-left: 0.750rem;
+    margin-top: 0.2rem;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    main .sticky {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    main .sticky {
+        top: 55%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    main .sticky {
+        display: none;
+    }
+}
+
+
+
+
+header {
+    width: fit-content;
+    height: 22rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border: 5px solid white;
+    position: relative;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -7px; 
+    width: calc(100% + 14px);
+    height: calc(100% - 16px);
+    background: #2c3e50;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+
+header:hover:before {
+    transform: scaleY(0);
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: -7px; 
+    height: calc(100% + 14px);
+    width: calc(100% - 18px);
+    background: #2c3e50;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+
+header:hover:after {
+    transform: scaleX(0);
+}
+
+header .outer-title { 
+    position: relative;
+    z-index: 3;
+    display: block;
+}
+
+
+.title-container {
+    z-index: 3;
+}
+
+.hi {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding-top: 0.8rem;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 4rem;
+    box-sizing: border-box;
+    line-height: 0;
+    font-family: 'WorkD', sans-serif;
+    font-weight: 400;    
+}
+
+.occupation {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 960px) {
+    header {
+        height: 16rem;
+    }
+
+    .hi {
+        font-size: 1rem;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .occupation {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 12rem;
+        margin-bottom: 15rem;
+        margin-top: 10rem;
+    }
+    
+    .hi {
+        font-size: 0.8rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .occupation {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 340px) {
+    header {
+        height: 10rem;
+        margin-bottom: 5rem;
+        margin-top: 6rem;
+    }
+    
+    .hi {
+        font-size: 0.6rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .occupation {
+        font-size: 0.6rem;
+    }
+}
+
+
+#abt-jump {
+    padding-top: 3rem;
+}
+
+#abt-bck {
+    background-color: #34495e;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 30rem;
+    padding: 1.5rem 0rem;
+    margin-bottom: 9rem;
+}
+
+#abt-bck h2 {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 1rem;
+}
+
+
+.aboutme {
+    width: 65%;
+    text-align: left;
+    margin-left: 15%;
+    display: flex;
+    padding: 0.3rem 1rem;
+    margin-bottom: 2rem;
+    border-left: 3px solid white;
+    font-size: 1.1rem;
+    
+}
+
+.aboutme p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.headshot-container {
+    width: 35%;
+    margin: auto;
+    margin-left: 3rem;
+}
+
+.headshot-container img {
+    height: 14rem;
+    width: 11.46rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1080px)  {
+    .aboutme {
+        font-size: 1.1rem;
+        width: 75%;
+    }
+
+    #abt-bck {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutme {
+        font-size: 1.1rem;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .aboutme p {
+        margin-bottom: 2rem;
+    }
+
+    #abt-bck {
+        height: auto;
+    }
+}
+
+#skl-jump {
+    padding-top: 2rem;
+}
+
+#skl-bck {
+    width: 100%;
+    height: auto;
+    background-color: #34495e;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+}
+
+#skl-bck h2 {
+    text-align: right;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.skll-con {
+    margin: 1rem 15% 2rem 16%;
+    padding: 0.5rem 0.5rem;
+    border-right: 3px solid white;
+}
+
+.skll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.skll img {
+    height: 7rem;
+    width: auto;
+    padding-bottom: 0.2rem;
+}
+
+.web-img,
+.java-img,
+.git-img {
+    border-bottom: 3px solid white;
+}
+
+
+.desc {
+    margin: 0rem 15% 2rem 15%;
+    width: 55%;
+    height: 9.15rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    border-left: 3px solid white;
+}
+
+.web, 
+.java, 
+.git {
+    position: absolute;
+    width: 55%;
+    height: 9rem;
+    transition: all 0.3s ease-in-out;
+    padding: 0rem 1rem;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.web {
+    border-top: 3px solid white;
+}
+
+.java {
+    border-right: 3px solid white;
+}
+
+.git {
+    border-bottom: 3px solid white;   
+}
+
+.show {
+    transition: all 0.3s ease-in-out;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.dummy {
+    display: none;
+}
+
+@media only screen and (max-width: 930px) {
+    .skll img {
+        height: 5rem;
+        width: auto;
+    }
+}
+   
+
+@media only screen and (max-width: 800px) {
+    .skll-con,
+    .desc {
+       display: none;
+    }
+  
+    .dummy {
+        display: contents;
+    }
+
+    .skll-con-mbl {
+        margin: 1rem 15% 2rem 15%;
+        padding: 0.5rem 0.5rem;
+        border-right: 3px solid white;
+    }
+
+    .mbl-img img {
+        height: 3rem;
+        width: auto;
+        border: none;
+    }
+
+    .desc-mbl {
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid white;
+    }
+}
+
+
+.caro-con * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caro-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-bottom: 9rem;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.wrapper button {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px black;
+}
+
+.wrapper button:first-child {
+    left: 0.5rem;
+}
+
+.wrapper button:last-child {
+    right: 0.7rem;
+}
+
+.wrapper button ion-icon {
+    height: 2rem;
+    width: 2rem;
+    color: #ffffff;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 470px;
+    list-style: none;
+    background: #34495e;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.card .img {
+    background: #34495e;
+    width: 90%;
+    height: 50%;
+    margin-top: 1rem;
+    border-radius: 0.25rem;    
+}
+
+.card .img img {
+    width: 18.45rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 20px 0 5px;
+    text-decoration: underline;
+    color: white;
+}
+
+.card span {
+    color: white;
+    font-size: 1.1rem;
+    width: 80%;
+    text-align: center;
+}
+
+.caro-btn {
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+    width: 6rem;
+    height: 1.6rem;
+    background-color: transparent;
+    border: none;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6rem;
+  }
+  .caro-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .caro-btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .caro-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid white;
+    transform: scale(1.2,1.2);
+  }
+  .caro-btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+    cursor: pointer;
+  }
+
+
+@media only screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+
+.con-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.con-container {
+    width: 50rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #34495e;
+    border-radius: 0.25rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 25px 40px 10px 40px;
+    color: white;
+}
+
+.con-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1rem #3498db;
+}
+
+.con-container form {
+    padding: 2rem 0 0 0 0;
+}
+
+.con-container form .con-row {
+    display: flex;
+    margin: 2rem 0;
+}
+
+form .con-row .data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .con-row .textarea {
+    height: 4.5rem;
+}
+
+.data input,
+.textarea textarea {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    background-color: #34495e;
+    outline: none;
+    color: white;
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.data input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);  
+  color: #3498db;
+  font-size: 14px;
+} 
+
+.data label {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: #34495e;
+}
+
+.data .underline {
+    position: absolute;
+    margin-top: -2px;
+    height: 2px;
+    width: 100%;
+}
+
+.data .underline::before,
+.data .underline::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding-right: 5px;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.data input:focus ~ .underline::before, .underline::after,
+.textarea textarea:focus ~ .underline::before, .underline::after,
+.data input:valid ~ .underline::before, .underline::after,
+.textarea textarea:valid ~ .underline::before, .underline::after {
+    transform: scaleX(1);
+} 
+
+.submit-btn .data{
+    height: 45px!important;
+    width: 25%!important;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.submit-btn .data:hover {
+    box-shadow: 0rem 0rem 0.8rem #3498db;
+    transition: all 0.5s ease-in-out;
+}
+
+.submit-btn .data .inner {
+    height: 100%;
+    width: 100%;
+    content: "";   
+    transform: scaleX(0);
+    background-color: #3498db;
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn .data:hover .inner {
+    transform: scaleX(1);
+}
+
+.submit-btn .data:hover input {
+ color: rgb(255, 255, 255);
+ font-size: 1.2rem;
+ transition: all 0.3s ease-in-out;
+}
+
+
+.submit-btn .data input {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: white;
+    text-shadow: 0 0 0.5rem #3498db;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn .data input:focus {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .con-container .text {
+        font-size: 30px;
+    }
+    .con-container form {
+        padding: 10px 0 0 0 0;
+    }
+
+    .con-container form .con-row {
+        display: block;
+    }
+
+    form .con-row .data {
+        margin: 35px 0!important;
+    }
+
+    .submit-btn .data {
+        width: 50%!important;
+    }
+}
+
+.alter {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.sayhello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+.hello-btn {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 0.25rem;
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    line-height: 4rem;
+}
+
+.hello-btn a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hello-btn:hover a,
+.hello-btn:focus a {
+    color: #3498db;
+    transition: all 0.3s ease-in-out;
+}
+
+.hello-btn:hover,
+.hello-btn:focus {
+    box-shadow: 0rem 0rem 1rem #3498db;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid #3498db;
+}
+
+.hello-btn:hover,
+.hello-btn:focus {
+    color: #3498db;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+
+.sayhello .hello-top {
+    position: absolute;
+    height: 10px;
+    width: 12px;
+    background-color: #2c3e50;
+    top: -3px;
+    left: 75%;
+    display: block;
+    content: "";
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    transform: translate(50%) skewX(305deg);
+}
+
+.sayhello .hello-btn:hover .hello-top,
+.sayhello .hello-btn:focus .hello-top {
+    width: 20px;
+    top: -3px;
+    left: 15%;
+    transition: all 0.3s ease-in-out;
+    transform: skewX(0deg);
+}
+
+.sayhello .hello-bot {
+    position: absolute;
+    height: 10px;
+    width: 12px;
+    background-color: #2c3e50;
+    bottom: -3px;
+    right: 80%;
+    display: block;
+    content: "";
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    transform: translate(50%) skewX(305deg);
+}
+
+.sayhello .hello-btn:hover .hello-bot,
+.sayhello .hello-btn:focus .hello-bot {
+    width: 20px;
+    bottom: -3px;
+    right: 15%;
+    transition: all 0.3s ease-in-out;
+    transform: skewX(0deg);
+}
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+footer ion-icon {
+    font-size: 3rem;
+    color: white;
+}
+
+footer ion-icon:hover {
+    color: black;
+}

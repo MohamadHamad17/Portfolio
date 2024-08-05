@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Mohamad Hamad's personal portfolio showcasing skills and projects, ending with a contact form.">
+    <link rel="stylesheet" href="./resources/index.css">
+    <title>Mohamad Hamad's Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'RalewayD'; 
+            src: url('./resources/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'WorkD';
+            src: url('./resources/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+            font-display: swap;
+        }
+    </style>
+
+    <meta name="viewport" content="width= device - width, initial-scale=1" />
+    <script src="./resources/index.js" defer></script>
+</head>
+
+
+<body style="margin: 0;">
+
+        <nav class="nav-bar">  
+            <div class="logo-container">
+                <img src="./resources/images/test.webp" alt="My personal Logo"> 
+            </div>
+
+            <div class="toggle-icon">
+                <i class="open"><ion-icon name="menu-outline"></ion-icon></i>
+                <i class="close"><ion-icon name="add-outline"></ion-icon></i>
+            </div>
+
+            <ul class="mbl-menu">
+                <li><a href="#abt-jump" class="about">About Me</a></li>
+                <li><a href="#skl-jump" class="skills">Skills</a></li>
+                <li><a href="#prj" class="projects">Projects</a></li>
+                <li><a href="#cnt" class="contact">Contact</a></li>
+                <li><a href= "https://github.com/MohamadHamad17" class="mbl-gitlink" aria-label="A link to my GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+
+            <div class="menu">
+                <a href="#abt-jump" class="about">About Me</a>
+                <a href="#skl-jump" class="skills">Skills</a>
+                <a href="#prj" class="projects">Projects</a>
+                <a href="#cnt" class="contact">Contact</a>
+                <div class="animation start-about"></div>
+            </div>
+            <div class="gitlink-con">
+                <a href= "https://github.com/MohamadHamad17" class="gitlink" aria-label="A link to my GitHub"><ion-icon name="logo-github"></ion-icon></a>
+            </div>    
+        </nav>
+
+    <header>
+        <div class="outer-title">
+            <div class="title-container">
+                <div class="hi">
+                    <p>Hello, my name is</p>
+                </div>
+                <div class="name">
+                    <h1>Mohamad Hamad</h1>
+                </div>
+                <div class="occupation">    
+                    <p>An Aspiring Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main> 
+ 
+    <div class="sticky">
+        <ul class="sticky-items">
+            <li class="item-disp"><a class="display1"><ion-icon name="arrow-up-sharp"></ion-icon></a><a href="#" class="display2">Top</a></li>
+            <li class="item-disp"><a class="display1"><ion-icon name="extension-puzzle-outline"></ion-icon></a><a href="#skl-jump" class="display2">Skills</a></li>
+            <li class="item-disp"><a class="display1"><ion-icon name="folder-open-outline"></ion-icon></a><a href="#prj" class="display2">Projects</a></li>
+            <li class="item-disp"><a class="display1"><ion-icon name="at-outline"></ion-icon></a><a href="#cnt" class="display2">Contact</a></li>
+            <li class="sticky-line"></li>
+        </ul>
+    </div>    
+
+
+    <div id="abt-jump"></div>
+    <section id="abt-bck">
+            <h2>About Me</h2>
+                <div class="aboutme">
+                    <p>Hi, I'm Mohamad Hamad, a second-year Computer Science student fueled by a passion for coding. Every day, I dive into the world of programming and software engineering, constantly honing my skills and pushing my boundaries. My journey isn't just about learning; it's about transforming challenges into opportunities and mastering new technologies.
+                    <br><br>
+                    I'm also particularly interested about cybersecurity, with a keen interest in cloud architecture. The intersection of security and cloud technology fascinates me, and I'm eager to explore how these fields can be leveraged to build robust and innovative solutions.
+                    <br><br>
+                    When I'm not coding, you'll find me experimenting with new tech, working out in the gym, and striving to stay at the cutting edge of the tech industry. I'm driven by a desire to make an impact and find a role that challenges me and helps me grow. Let's connect and explore how we can push the boundaries of technology together!
+                    <br><br>
+                        </p>
+                    <div class="headshot-container">
+                        <img src="./resources/images/headshot-small.jpeg" alt="A headshot photo of myself.">
+                    </div>
+                </div>
+        </section>
+
+        <div id="skl-jump"></div>
+        <section id="skl-bck">
+            <h2>Skills</h2>
+            <div class="skll-con">
+                    <div class="skll">
+                        <img class="web-img" src="./resources/images/HTML5-small.webp" alt="The HTML5 Logo" tabindex="0">
+                        <img src="./resources/images/CSS3-small.webp" alt="The CSS3 Logo">
+                        <img class="java-img" src="./resources/images/JavaScript-small.webp" alt="The JavaScript Logo" tabindex="0">
+                        <img src="./resources/images/node2-small.webp" alt="The Node Logo">
+                        <img class="git-img" src="./resources/images/GitHub-small.webp" alt="The GitHub Logo" tabindex="0">
+                        <img src="./resources/images/gitbash.svg" alt="The Gitbash Logo">
+                    </div>
+            </div>
+            
+            <div class="desc">
+                <div class="web">
+                    <h3>Web Development</h3>
+                    <p>I can create responsive websites using HTML and CSS, enhancing static sites with smooth transitions and engaging animations.</p>    
+                </div>
+                
+                <div class="java">
+                    <h3>JavaScript</h3> 
+                    <p>I can build features and augment websites using JavaScript, an object-oriented programming language that brings web interactivity to life.</p>
+                </div>
+
+                <div class="git">
+                    <h3>GitHub & Git</h3> 
+                    <p>I can integrate projects with Git and GitHub, a version control system and web application that enables developers worldwide to store, manage, and collaborate on code.</p>
+                </div>
+            </div>
+
+            <div class="dummy">
+                <div class="skll-con-mbl">
+                    <div class="mbl-img">
+                        <img class="web-img" src="./resources/images/HTML5-mbl.webp" alt="The HTML5 Logo" loading="lazy">
+                        <img class="web-img" src="./resources/images/CSS3-mbl.webp" alt="The CSS3 Logo" loading="lazy">
+                    </div>
+
+                    <div class="desc-mbl">
+                        <h3>Web Development</h3>
+                        <p>I can create responsive websites using HTML and CSS, enhancing static sites with smooth transitions and engaging animations.</p>
+                    </div>
+
+                    <div class="mbl-img">
+                        <img class="java-img" src="./resources/images/JavaScript-small.webp" alt="The JavaScript Logo" loading="lazy">
+                        <img class="node-img" src="./resources/images/node2-small.webp" alt="The Node Logo" loading="lazy">
+                    </div>  
+
+                    <div class="desc-mbl">
+                        <h3>JavaScript</h3> 
+                        <p>I can build features and augment websites using JavaScript, an object-oriented programming language that brings web interactivity to life.</p>
+                    </div>
+
+                    <div class="mbl-img">
+                        <img class="git-img" src="./resources/images/GitHub-small.webp" alt="The GitHub Logo" loading="lazy">
+                        <img class="git-img" src="./resources/images/gitbash.svg" alt="The GitBash Logo" loading="lazy">
+                    </div>
+
+                    <div class="desc-mbl">
+                        <h3>GitHub & Git</h3> 
+                        <p>I can integrate projects with Git and GitHub, a version control system and web application that enables developers worldwide to store, manage, and collaborate on code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+           
+        <h2 id="prj">Projects</h2>
+        <section class="caro-con">
+            <div class="wrapper">
+                <button id="left" class="arrow arrow-left" aria-label="scroll left"><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
+                <ul class="carousel">
+
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/weatherWave.png" alt="A screenshot of my weather app." draggable="false" loading="lazy"></div>
+                        <h3>Weather App</h3>
+                        <span>A weather app that allows you to search for the current weather in your chosen city.
+                            Powered with the Open Weather App API. </span>
+                        <br><br>
+                            <a class="caro-btn">Open</a>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/aero.png" alt="A screenshot of my game Aero Ace" draggable="false" loading="lazy"></div>
+                        <h3>Aero Ace</h3>
+                        <span>Navigate a plane through mountains by tapping to keep it airborne, developed in Python using pygame."</span>
+                        <br><br>
+                            <a class="caro-btn">Open</a>
+                    </li>
+
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/portfolio.png" alt="An image of my portfolio website" draggable="false" loading="lazy"></div>
+                        <h3>Portfolio Website</h3>
+                        <span>My portfolio website crafted with a blend of HTML, CSS, and JavaScript to provide an interactive and visually appealing experience.</span>
+                        <br><br>
+                            <a class="caro-btn">Open</a>
+                    </li>
+
+                    <li class="card">
+                        <div class="img"><img src="./resources/images/comingsoon-mbl.webp" alt="A coming soon image that says site under construction with a road sign showing a man working." draggable="false" loading="lazy"></div>
+                        <h3>Coming Soon...</h3>
+                        <span>I am currently working on a few things so this space will be filled soon.</span>
+                        <br><br>
+                            <a class="caro-btn">Open</a>
+                    </li>
+
+                </ul>
+                <button id="right" class="arrow arrow-right" aria-label="scroll right"><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+            </div>   
+        </section>
+        
+    <section id="cnt" class="con-con">
+        <div class="con-container">
+            <div class="con-title">Contact Me</div>
+            <form action="https://formsubmit.co/mohamadhamad17@hotmail.com" method="POST">
+                
+                <div class="con-row">
+                    <div class="data">
+                        <input type="text" aria-label="First name" required>
+                        <div class="underline"></div>
+                        <label>First Name</label>
+                    </div>
+                    
+                    <div class="data">
+                        <input type="text" aria-label="Last Name" required>
+                        <div class="underline"></div>
+                        <label>Last Name</label>
+                    </div>  
+                </div>
+                
+                <div class="con-row">
+                    <div class="data">
+                        <input type="text" aria-label="Email" required>
+                        <div class="underline"></div>
+                        <label>Email</label>
+                    </div>
+                </div>
+
+                <div class="con-row">
+                    <div class="data textarea">
+                        <textarea cols="30" rows="10" aria-label="Write your message" required></textarea>
+                        <div class="underline"></div>
+                        <label>Write your message</label>
+                    </div>
+                </div>
+
+                <div class="con-row submit-btn">
+                    <div class="data">
+                        <div class="inner"></div>
+                        <input type="submit" value="submit" aria-label="Submit">
+                    </div>
+                </div>
+
+               <input type="hidden" name="_captcha" value="false">
+               <input type="hidden" name="_next" value="https://github.com/MohamadHamad17">
+            </form>
+        </div>
+    </section>
+
+
+        <h4 class="alter">Or, email me using the link below.</h4>
+
+        <section class="sayhello">
+        <a class="hello-btn" href="mailto:mohamadhamad17@hotmail.com">Email<i class="hello-top"></i>
+            <i class="hello-bot"></i></a>
+        </section>
+        <br><br><br><br>
+</main>
+
+    <footer>
+        <a href="https://github.com/MohamadHamad17" aria-label="A link to my GitHub profile."><ion-icon name="logo-github"></ion-icon></a>
+        <p>Mohamad Hamad © 2024. </p>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
